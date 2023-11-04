@@ -1,26 +1,38 @@
-apt show <package> # check version, if its too old: download prebuilt vs add PPA?
+## Zsh
 
+```bash
 apt install zsh -y
+```
 
-# cp .zshrc ?
+### Oh My Zsh
 
-# change default shell to zsh
+```zsh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# change default shell if ohmyzsh not handling(reboot required)
 chsh -s $(which zsh)
+```
 
+## Alacritty
+
+```zsh
 sudo add-apt-repository ppa:aslatter/ppa -y
-
 apt install alacritty -y
+```
+
+## tmux
+```zsh
 apt install tmux -y
+```
+### [TPM](https://github.com/tmux-plugins/tpm)
+```zsh
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+### [JetBrainsMonoNerdFont](https://www.nerdfonts.com/font-downloads)
+    
+https://gist.github.com/matthewjberger/7dd7e079f282f8138a9dc3b045ebefa0
+ 
 
-tmux keybind
-<prefix> = ctrl + b 
-prefix + c : 'c'reate new window
-prefix + WINDOW NUMBER : switch window
-prefix + n/p : 'n'ext / 'p'revious window 
+## TODO
 
-
-!! symlink vs stow
-
-!! vim motion
-how to delete the whole line? (ctrl+x on windows)
-ctrl + d to select multiple words(from vscode)
+ln -s || GNU Stow
