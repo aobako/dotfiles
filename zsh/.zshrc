@@ -71,7 +71,7 @@ ZSH_THEME="dpoggi"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,7 +103,5 @@ source $ZSH/oh-my-zsh.sh
 
 alias ls="ls -a"
 
-# Prebuilt binary installation
-# https://apetenchea.github.io/2021/10/17/installing-prebuilt-binaries-in-ubuntu/
-export PATH="$PATH:/opt/nvim-linux64/bin"
-export PATH="$PATH:/opt/node-v18.18.2-linux-x64/bin"
+# WSL 2
+alias code='/mnt/c/Users/Dan/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code'

@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+sudo apt install git
+sudo apt install tmux
+sudo apt install stow
+sudo apt install build-essential
