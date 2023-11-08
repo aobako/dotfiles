@@ -1,6 +1,11 @@
 #!/usr/bin/env zsh
+# sudo apt install zsh
+# sudo apt install git
 
-sudo apt install git
 sudo apt install tmux
 sudo apt install stow
-sudo apt install build-essential
+sudo apt install build-essential -y
+
+# native ubuntu
+# sudo add-apt-repository ppa:aslatter/ppa -y
+# sudo apt install alacritty -y
