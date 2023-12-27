@@ -1,6 +1,6 @@
 ## Setup
 
-```zsh
+```bash
 git clone https://github.com/irigyano/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 stow */
@@ -12,10 +12,6 @@ stow */
 
 ```zsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# change default shell if ohmyzsh not handling (reboot required)
-chsh -s $(which zsh)
-
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ```
