@@ -58,6 +58,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Attack to TMUX session on start
+# -z
+#   string is null, that is, has zero length
+if [ -z "$TMUX" ]
+then
+    tmux attach -t TMUX || tmux new -s TMUX -c $HOME
+fi
+
 # Neovim
 export PATH="/opt/nvim-linux64/bin:$PATH"
 
