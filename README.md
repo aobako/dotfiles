@@ -4,6 +4,8 @@
 git clone https://github.com/irigyano/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 stow */
+# Remove symbolic links 
+stow -D */
 ```
 
 ## Packages Installation
