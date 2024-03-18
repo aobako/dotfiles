@@ -4,7 +4,7 @@
 git clone https://github.com/irigyano/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 stow */
-# Remove symbolic links 
+# Remove symbolic links
 stow -D */
 ```
 
@@ -17,21 +17,6 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ```
-
-### [TPM](https://github.com/tmux-plugins/tpm)
-
-```zsh
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-tmux source ~/.config/tmux/tmux.conf
-```
-
-### [neovim](https://github.com/neovim/neovim/releases/tag/stable)
-
-```zsh
-tar -C /usr/local/stow -xzf nvim-linux64.tar.gz
-```
-
-### [JetBrainsMonoNerdFont](https://www.nerdfonts.com/font-downloads)
 
 # Reference
 
