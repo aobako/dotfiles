@@ -5,7 +5,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # override omz prompt style
-PROMPT='%F{red}$(git_prompt_info)%f» '
+PROMPT='%F{#82AAFF}%1d%f $(git_prompt_info)» '
 
 # neovim
 export PATH="/opt/nvim-linux64/bin:$PATH"
