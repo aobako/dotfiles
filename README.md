@@ -17,6 +17,12 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ```
+### neovim
+
+```zsh
+sudo apt-get install build-essential
+sudo apt install unzip
+```
 
 ## Windows Terminal Appearance
 
