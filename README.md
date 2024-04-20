@@ -4,8 +4,12 @@
 git clone https://github.com/irigyano/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 stow */
+```
 
-stow -D */ # Remove symbolic links
+#### Remove symbolic links
+
+```bash
+stow -D */
 ```
 
 ## Packages Installation
@@ -17,7 +21,8 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ```
-### neovim
+
+### neovim dependencies
 
 ```zsh
 sudo apt-get install build-essential
@@ -36,7 +41,10 @@ sudo apt install unzip
   "cursorShape": "filledBox",
   "font": {
     "face": "JetBrainsMono Nerd Font Mono",
-    "size": 14.0
+    "size": 14.0,
+    "feature": {
+      "calt": 0
+    }
   },
   "hidden": false,
   "intenseTextStyle": "bright",
@@ -44,7 +52,6 @@ sudo apt install unzip
   "padding": "0",
   "scrollbarState": "hidden",
   "suppressApplicationTitle": true
-  // "startingDirectory": "C:\\Users\\<user>\\Documents",
 }
 ```
 
