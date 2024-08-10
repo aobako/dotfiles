@@ -22,13 +22,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 ```
 
-### neovim dependencies
-
-```zsh
-sudo apt-get install build-essential
-sudo apt install unzip
-```
-
 ## Windows Terminal Appearance
 
 <details>
@@ -91,5 +84,3 @@ sudo apt install unzip
 ## Reference
 
 [GNU Stow / Manage your /usr/local with ease](https://www.reddit.com/r/linux/comments/1f7sh4/gnu_stow_manage_your_usrlocal_with_ease/)
-
-[How to remove the Win10's PATH from WSL](https://stackoverflow.com/a/51345880)
