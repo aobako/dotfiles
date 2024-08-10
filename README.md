@@ -1,4 +1,6 @@
-## Setup
+## Snippets
+
+#### Setup
 
 ```bash
 git clone https://github.com/irigyano/dotfiles.git ~/dotfiles
@@ -10,6 +12,19 @@ stow */
 
 ```bash
 stow -D */
+```
+
+#### Overwrite existing files
+
+```bash
+stow --adopt *
+git restore .
+```
+
+#### VSCode Extensions
+
+```bash
+code --list-extensions > ./code-extensions
 ```
 
 ## Packages Installation
