@@ -1,19 +1,19 @@
 #!/usr/bin/zsh
 if command -v code >/dev/null 2>&1; then
-  code_extensions=$(cat "$HOME/dotfiles/code_extensions" | sort)
+  code_extensions=$(cat "$HOME/dotfiles/code-extensions" | sort)
   installed_extensions=$(code --list-extensions | sort)
-  uninstalled_extensions=$(comm -23 <(echo "$code_extensions") <(echo "$installed_extensions"))
+  incoming_extensions=$(comm -23 <(echo "$code_extensions") <(echo "$installed_extensions"))
 
-  echo "Checking for uninstalled VSCode extensions..."
+  echo "Checking for incoming VSCode extensions..."
 
-  if [ -z "$uninstalled_extensions" ]; then
+  if [ -z "$incoming_extensions" ]; then
     echo "All good!"
   else
-    echo "Found $(echo "$uninstalled_extensions" | wc -l)."
+    echo "Found $(echo "$incoming_extensions" | wc -l)."
 
-    echo "$uninstalled_extensions" | while read -r extension; do
-    #   echo "Installing $extension..."
-    #   code --install-extension "$extension"
+    echo "$incoming_extensions" | while read -r extension; do
+      echo "Installing $extension..."
+      code --install-extension "$extension"
     done
 
     echo "Done!"
