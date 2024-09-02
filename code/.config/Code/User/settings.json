@@ -1,3 +1,57 @@
 {
-  "editor.minimap.enabled": false
+  // UI
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.parameterHints.enabled": false,
+  "workbench.startupEditor": "none",
+  "extensions.ignoreRecommendations": true,
+  "editor.stickyScroll.enabled": false,
+
+  // preference
+  "editor.lineNumbers": "relative",
+  "editor.suggest.insertMode": "replace",
+
+  // machine couped
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "workbench.iconTheme": "vscode-icons",
+
+  // LSP
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+
+  // VSCode Vim
+  "vim.handleKeys": {
+    // use vscode default C-w (closing tab)
+    "<C-w>": false,
+    "<C-space>": false
+  },
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
+  // newly added
+  "explorer.confirmDragAndDrop": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "git.openRepositoryInParentFolders": "always",
+  "diffEditor.ignoreTrimWhitespace": false
 }

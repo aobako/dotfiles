@@ -5,7 +5,7 @@
 ```bash
 git clone https://github.com/irigyano/dotfiles.git ~/dotfiles
 cd ~/dotfiles
-stow */
+stow --no-folding */
 ```
 
 #### Remove symbolic links
