@@ -11,6 +11,11 @@
   // preference
   "editor.lineNumbers": "relative",
   "editor.suggest.insertMode": "replace",
+  "editor.formatOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.openRepositoryInParentFolders": "always",
 
   // machine couped
   "terminal.integrated.defaultProfile.windows": "Git Bash",
@@ -47,11 +52,6 @@
   },
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
-  "vim.useSystemClipboard": true,
+  "vim.useSystemClipboard": true
   // newly added
-  "explorer.confirmDragAndDrop": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.formatOnSave": true,
-  "git.openRepositoryInParentFolders": "always",
-  "diffEditor.ignoreTrimWhitespace": false
 }

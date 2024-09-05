@@ -1,25 +1,41 @@
 [
-  // Switch Panes
+  // Switch Editor
   {
-    "key": "shift+l",
-    "command": "workbench.action.nextEditor",
-    "when": "vim.mode == 'Normal'"
+    "key": "shift+j",
+    "command": "workbench.action.nextEditorInGroup",
+    "when": "vim.mode == 'Normal' && editorFocus"
   },
+  {
+    "key": "shift+k",
+    "command": "workbench.action.previousEditorInGroup",
+    "when": "vim.mode == 'Normal' && editorFocus"
+  },
+  // Switch EditorGroup
   {
     "key": "shift+h",
-    "command": "workbench.action.previousEditor",
-    "when": "vim.mode == 'Normal'"
+    "command": "workbench.action.focusLeftGroup",
+    "when": "vim.mode == 'Normal' && editorFocus"
   },
-  // Pane Motions
   {
-    "key": "ctrl+shift+j",
+    "key": "shift+l",
+    "command": "workbench.action.focusRightGroup",
+    "when": "vim.mode == 'Normal' && editorFocus"
+  },
+  // move Editor pos
+  {
+    "key": "ctrl+shift+l",
     "command": "workbench.action.moveEditorToNextGroup",
     "when": "vim.mode == 'Normal'"
   },
   {
-    "key": "ctrl+shift+k",
+    "key": "ctrl+shift+h",
     "command": "workbench.action.moveEditorToPreviousGroup",
     "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+shift+space",
+    "command": "workbench.action.splitEditorRight",
+    "when": "editorFocus"
   },
   // Toggles
   {
@@ -30,18 +46,7 @@
     "key": "ctrl+shift+p",
     "command": "workbench.action.quickOpen"
   },
-  // Select Intellisense
-  {
-    "key": "ctrl+n",
-    "command": "workbench.action.terminal.selectNextSuggestion",
-    "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
-  },
-  {
-    "key": "ctrl+p",
-    "command": "workbench.action.terminal.selectPrevSuggestion",
-    "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
-  },
-  // Unbind code defaults
+  // unbind
   {
     "key": "ctrl+shift+.",
     "command": "-breadcrumbs.toggleToOn",
@@ -76,7 +81,6 @@
     "key": "f1",
     "command": "-workbench.action.showCommands"
   },
-
   {
     "key": "down",
     "command": "-workbench.action.terminal.selectNextSuggestion",
@@ -90,5 +94,10 @@
   {
     "key": "ctrl+n",
     "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+k ctrl+\\",
+    "command": "-workbench.action.splitEditorRight"
   }
+  // newly added
 ]
