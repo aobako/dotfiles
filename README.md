@@ -21,12 +21,6 @@ stow --adopt *
 git restore .
 ```
 
-#### VSCode Extensions
-
-```bash
-code --list-extensions > ./code-extensions
-```
-
 ## Packages Installation
 
 ### Oh My Zsh
