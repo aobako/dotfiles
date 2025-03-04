@@ -3,7 +3,7 @@
 #### Setup
 
 ```bash
-git clone https://github.com/irigyano/dotfiles.git ~/dotfiles
+git clone https://github.com/aobako/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 stow --no-folding */
 ```
